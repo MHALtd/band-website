@@ -48,7 +48,7 @@ header.navbar-container .nav-list li a {
   font-size: 1.2rem;
   font-weight: 800;
   color: #e4f1ff;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1rem;
   border-radius: 90px;
   transition: all 0.2s ease-in-out;
 }
@@ -62,7 +62,6 @@ main {
   background-color: #9400ff;
   width: 100%;
   margin-inline: auto;
-  padding: 2rem 4rem;
 }
 
 main h2 {
@@ -70,6 +69,7 @@ main h2 {
 }
 
 main .content {
+  padding: 2rem 4rem;
   flex: 1;
   display: flex;
   align-items: center;
@@ -114,6 +114,10 @@ main article {
   display: flex;
   flex-flow: column nowrap;
   font-size: 1.2rem;
+}
+
+main .pad-fix {
+  padding: 2rem 4rem;
 }
 
 main .article p {
@@ -229,13 +233,9 @@ footer {
     column-gap: 0.5rem;
   }
 
-  main {
-    padding: 1rem 3rem;
-  }
-
   main .content {
     flex-direction: column;
-    gap: 2rem;
+    padding: 1rem 2rem;
   }
 
   main .content .content-description .title {
@@ -246,17 +246,18 @@ footer {
     order: -1;
   }
 
+  main .pad-fix {
+    padding: 2rem;
+  }
+
   main .article {
     padding-top: 100px;
   }
 
   main .article .flex-profile {
     display: inline;
-  }
-
-  main .article .flex-profile img {
-    margin-left: 15px;
-    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
   }
 
   main .article .iframe-flex {
